@@ -71,9 +71,7 @@ sketchybar --add item front_app left \
 
 sketchybar --add item clock right \
            --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
-
-            # ZMK Keyboard Battery (Lily58)
-           --add item kb_batt right \ 
+           --add item kb_batt right \
            --set kb_batt update_freq=10 script="$PLUGIN_DIR/keyboard_battery.sh"
 
 ##### Force all scripts to run the first time (never do this in a script) #####

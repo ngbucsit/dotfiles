@@ -1,3 +1,5 @@
+#!/bin/sh
+
 CENTRAL_BATTERY_LEVEL=$(pmset -g accps | grep Lily58 | grep -Eo "\d+%" | cut -d% -f1 | head -n 1)
 PERIPHERAL_BATTERY_LEVEL=$(pmset -g accps | grep Lily58 | grep -Eo "\d+%" | cut -d% -f1 | tail -n 1)
 
