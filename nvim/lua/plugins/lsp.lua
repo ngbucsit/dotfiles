@@ -83,8 +83,6 @@ local servers = {
 			},
 		},
 	},
-
-	ts_ls = {},
 }
 
 vim.pack.add({
@@ -97,7 +95,7 @@ vim.pack.add({
 require("mason").setup({})
 
 require("mason-lspconfig").setup({
-	automatic_enable = false,
+	automatic_enable = true,
 })
 
 local ensure_installed = vim.tbl_keys(servers or {})
